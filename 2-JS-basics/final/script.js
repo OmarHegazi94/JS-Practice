@@ -196,3 +196,20 @@ GOOD LUCK 😀
 
 // // console.log("Is John's BMI higher than Mark's ? " + isJohnBMIHigher);
 // // console.log("MarkBMI " + markBMI, "JohnBMI " + johnBMI);
+
+/*****************************
+ * Boolean logic
+ */
+
+// var firstName = "John";
+// var age = 16;
+
+// if (age < 13) {
+//   console.log(firstName + " is a boy.");
+// } else if (age >= 13 && age < 20) {
+//   console.log(firstName + " is a teenager");
+// } else if (age >= 20 && age < 30) {
+//   console.log(firstName + " is a young man");
+// } else {
+//   console.log(firstName + " is a man.");
+// }
