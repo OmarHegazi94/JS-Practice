@@ -213,3 +213,52 @@ GOOD LUCK 😀
 // } else {
 //   console.log(firstName + " is a man.");
 // }
+
+/*****************************
+ * The Ternary Operator and Switch Statements
+ */
+
+// Ternary operator
+var firstName = "John";
+var age = 16;
+
+age >= 18
+  ? console.log(firstName + " drinks beer.")
+  : console.log(firstName + " drinks juice.");
+
+var drink = age >= 18 ? "beer" : "juice";
+console.log(drink);
+
+// switch statements
+
+var job = "instructor";
+switch (job) {
+  case "teacher":
+  case "instructor":
+    console.log(firstName + " teaches people");
+    break;
+  case "driver":
+    console.log(firstName + " drives cars");
+    break;
+  case "designer":
+    console.log(firstName + " design websites");
+    break;
+  default:
+    console.log(firstName + " does something else");
+}
+
+var age = 33;
+
+switch (true) {
+  case age < 13:
+    console.log(firstName + " is a boy.");
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + " is a teenager.");
+    break;
+  case age >= 20 && age < 30:
+    console.log(firstName + " is a young man");
+    break;
+  default:
+    console.log(firstName + " is a man.");
+}
