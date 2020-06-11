@@ -303,24 +303,54 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 GOOD LUCK 😀
 */
 
-var JohnTeamAverage = (89 + 120 + 999) / 3;
-var MikeTeamAverage = (116 + 94 + 200) / 3;
-var MaryTeamAverage = (97 + 134 + 105) / 3;
+// var JohnTeamAverage = (89 + 120 + 999) / 3;
+// var MikeTeamAverage = (116 + 94 + 200) / 3;
+// var MaryTeamAverage = (97 + 134 + 105) / 3;
 
-if (JohnTeamAverage > MikeTeamAverage && JohnTeamAverage > MaryTeamAverage) {
-  console.log("John's Team Wins " + JohnTeamAverage);
-} else if (
-  JohnTeamAverage === MikeTeamAverage &&
-  JohnTeamAverage === MaryTeamAverage
-) {
-  console.log(
-    "Draw !! John's and Mike's and Mary's Teams Scored " + JohnTeamAverage
-  );
-} else if (
-  MaryTeamAverage > JohnTeamAverage &&
-  MaryTeamAverage > MikeTeamAverage
-) {
-  console.log("Mary's Team Wins " + MaryTeamAverage);
-} else {
-  console.log("Mike's Team Wins " + MikeTeamAverage);
+// if (JohnTeamAverage > MikeTeamAverage && JohnTeamAverage > MaryTeamAverage) {
+//   console.log("John's Team Wins " + JohnTeamAverage);
+// } else if (
+//   JohnTeamAverage === MikeTeamAverage &&
+//   JohnTeamAverage === MaryTeamAverage
+// ) {
+//   console.log(
+//     "Draw !! John's and Mike's and Mary's Teams Scored " + JohnTeamAverage
+//   );
+// } else if (
+//   MaryTeamAverage > JohnTeamAverage &&
+//   MaryTeamAverage > MikeTeamAverage
+// ) {
+//   console.log("Mary's Team Wins " + MaryTeamAverage);
+// } else {
+//   console.log("Mike's Team Wins " + MikeTeamAverage);
+// }
+
+/*****************************
+ * Functions
+ */
+
+function calculateAge(birthYear) {
+  return 2020 - birthYear;
 }
+
+var ageJohn = calculateAge(1994);
+var ageMike = calculateAge(1990);
+var ageJane = calculateAge(1995);
+
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(firstName + " retires in " + retirement + " years.");
+  } else {
+    console.log(firstName + " is already retired");
+  }
+}
+
+yearsUntilRetirement(1994, "Omar");
+yearsUntilRetirement(1990, "koko");
+yearsUntilRetirement(1955, "lolo");
+yearsUntilRetirement(1912, "bobo");
