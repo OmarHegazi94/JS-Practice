@@ -441,32 +441,65 @@ In the end, John would like to have 2 arrays:
 GOOD LUCK 😀
 */
 
-var tipCalculator = function (bill) {
-  var precentage;
-  if (bill < 50) {
-    precentage = 0.2;
-  } else if (bill > 50 && bill < 200) {
-    precentage = 0.15;
-  } else {
-    precentage = 0.1;
-  }
+// var tipCalculator = function (bill) {
+//   var precentage;
+//   if (bill < 50) {
+//     precentage = 0.2;
+//   } else if (bill > 50 && bill < 200) {
+//     precentage = 0.15;
+//   } else {
+//     precentage = 0.1;
+//   }
 
-  return bill * precentage;
+//   return bill * precentage;
+// };
+
+// var bills = [124, 48, 268];
+
+// var tips = [
+//   tipCalculator(bills[0]),
+//   tipCalculator(bills[1]),
+//   tipCalculator(bills[2]),
+// ];
+
+// var finalPaidAmount = [
+//   tipCalculator(bills[0]) + bills[0],
+//   tipCalculator(bills[1]) + bills[1],
+//   tipCalculator(bills[2]) + bills[2],
+// ];
+
+// console.log(tips);
+// console.log(finalPaidAmount);
+
+/*****************************
+ * Objects and properties
+ */
+
+//  Object literal
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  job: "teacher",
+  isMarried: false,
 };
 
-var bills = [124, 48, 268];
+console.log(john.firstName);
+console.log(john["lastName"]);
 
-var tips = [
-  tipCalculator(bills[0]),
-  tipCalculator(bills[1]),
-  tipCalculator(bills[2]),
-];
+var x = "birthYear";
+console.log(john[x]);
 
-var finalPaidAmount = [
-  tipCalculator(bills[0]) + bills[0],
-  tipCalculator(bills[1]) + bills[1],
-  tipCalculator(bills[2]) + bills[2],
-];
+john.job = "designer";
+john["isMarried"] = true;
 
-console.log(tips);
-console.log(finalPaidAmount);
+console.log(john);
+
+// new Object syntax
+var jane = new Object();
+jane.firstName = "Jane";
+jane.birthYear = 1969;
+jane["lastName"] = "Smith";
+
+console.log(jane);
