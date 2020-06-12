@@ -538,33 +538,79 @@ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and heig
 GOOD LUCK 😀
 */
 
-var John = {
-  fullName: "John Smith",
-  mass: 80,
-  height: 1.8,
-  calcBMI: function () {
-    this.BMI = this.mass / (this.height * this.height);
-    return this.BMI;
-  },
-};
+// var John = {
+//   fullName: "John Smith",
+//   mass: 80,
+//   height: 1.8,
+//   calcBMI: function () {
+//     this.BMI = this.mass / (this.height * this.height);
+//     return this.BMI;
+//   },
+// };
 
-var Mark = {
-  fullName: "Mark Koko",
-  mass: 99,
-  height: 1.9,
-  calcBMI: function () {
-    this.BMI = this.mass / (this.height * this.height);
-    return this.BMI;
-  },
-};
+// var Mark = {
+//   fullName: "Mark Koko",
+//   mass: 99,
+//   height: 1.9,
+//   calcBMI: function () {
+//     this.BMI = this.mass / (this.height * this.height);
+//     return this.BMI;
+//   },
+// };
 
-John.calcBMI();
-Mark.calcBMI();
+// John.calcBMI();
+// Mark.calcBMI();
 
-if (John.calcBMI() > Mark.calcBMI()) {
-  console.log(John.fullName + " has higher BMI with result of " + John.BMI);
-} else if (John.calcBMI() < Mark.calcBMI()) {
-  console.log(Mark.fullName + " has higher BMI with result of " + Mark.BMI);
-} else {
-  console.log("Draw!! both have the same BMI with result of " + Mark.BMI);
+// if (John.calcBMI() > Mark.calcBMI()) {
+//   console.log(John.fullName + " has higher BMI with result of " + John.BMI);
+// } else if (John.calcBMI() < Mark.calcBMI()) {
+//   console.log(Mark.fullName + " has higher BMI with result of " + Mark.BMI);
+// } else {
+//   console.log("Draw!! both have the same BMI with result of " + Mark.BMI);
+// }
+
+/*****************************
+ * Loops and iteration
+ */
+
+// for loop
+// for (var i = 0; i <= 20; i += 3) {
+//   console.log(i);
+// }
+
+// // i = 0, 0 < 10 true, log i to console, i++
+// // i = 1, 1 < 10 true, log i to console, i++
+// // ...
+// // i = 9, 9 < 10 true, log i to console, i++
+// // i = 10, 10 < 10 false, exit the loop
+
+// var John = ["John", "Smith", 1990, "designer", false];
+
+// for (var i = 0; i < John.length; i++) {
+//   console.log(John[i]);
+// }
+
+// // While loop
+// var i = 0;
+// while (i < John.length) {
+//   console.log(John[i]);
+//   i++;
+// }
+
+// continue and break statements
+var John = ["John", "Smith", 1990, "designer", false];
+
+// for (var i = 0; i < John.length; i++) {
+//   if (typeof John[i] !== "string") continue;
+//   console.log(John[i]);
+// }
+
+// for (var i = 0; i < John.length; i++) {
+//   if (typeof John[i] !== "string") break;
+//   console.log(John[i]);
+// }
+
+// Looping backwords
+for (var i = John.length - 1; i >= 0; i--) {
+  console.log(John[i]);
 }
